@@ -1,0 +1,95 @@
+
+.add-question{
+  margin-top: 80px;
+}
+.add-question-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.add-question-inputs input{
+  height:30px;
+  border-radius: 4px;
+  outline: none;
+ width: 70%;
+ margin: auto;
+  padding:0px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.add-question-inputs button{
+  height: 40px;
+  width: 300px;
+  color: azure;
+  background-color: blue;
+align-self: center;
+border-radius: 4px;
+font-size: 20px;
+font-weight: 600;
+outline: none;
+border: none;
+cursor: pointer;
+}
+
+
+.all-questions{
+  display: flex;
+  flex-direction:column-reverse;
+ 
+  width: 80%;
+  align-items: start;
+  margin: auto;
+  gap: 20px;
+  padding: 20px ;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+ 
+}
+
+.all-questions h1{
+  align-self: center;
+}
+.ques-ans-edit{
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  border-radius:5px;
+  justify-content:space-between;
+}
+.all-questions .ques-ans-edit .btn button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+ margin-right: 20px;
+ background-color: blue;
+}
+.all-questions .ques-ans-edit .ques-ans{
+  display: flex;
+  flex-direction: column;
+}
+.all-questions .ques-ans-edit .btn .edit{
+  background-color: rgba(0, 128, 0, 0.562);
+}
+.all-questions .ques-ans-edit .btn .delete{
+  background-color: rgba(141, 44, 44, 0.603);
+}
+.all-questions .ques-ans-edit .ques-ans button{
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight:600;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 255, 0.452);
+}
