@@ -42,10 +42,10 @@ function add() {
    if(idd===addd.length+1){
     let reeme=[...addd,{question:ques,options:[inp1,inp2,inp3,inp4],clicked:'',score:0,ans:answer,id:idd}]
   setAdd(reeme)
-  console.log(reeme)
+  
   save(reeme)
   setId('')
-  alert('hahaha')
+  
   }else if(idd===addd[idd-1].id){
 addd[idd-1].question=ques
 addd[idd-1].options[0]=inp1
@@ -53,12 +53,12 @@ addd[idd-1].options[1]=inp2
 addd[idd-1].options[2]=inp3
 addd[idd-1].options[3]=inp4
 addd[idd-1].ans=answer
-console.log(addd[idd-1])
+
 let reem=[...addd]
 save(reem)
 setAdd(reem)
 
-alert('working')
+
 
   }
   
@@ -78,9 +78,7 @@ function handle(){
 setDone(true)
 
 }
-console.log(done)
-;
-console.log(addd)
+
 }
 
 

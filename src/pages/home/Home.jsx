@@ -16,7 +16,7 @@ const Home = ({setDone,done,tab,tub,next,setItems,handle,handle1,setTab,setTub,i
             {if( option===addd[items].ans){
                 setTab(option);
               addd[items].clicked=option
-                console.log(addd[items].score)
+                
                setTub('')
               
                addd[items].score=1;
