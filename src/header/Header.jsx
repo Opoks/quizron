@@ -20,7 +20,7 @@ const Header = () => {
   }
   return (
     <div className='header'>
-        <h3><Link to='/'> Quiz-App</Link></h3>
+        <h3 onClick={()=>window.location.reload()}><Link to='/'> Quiz-App</Link></h3>
         <div className={isMenu?"around-menu1":''} onClick={()=>setIsMenu(false)}>
         <ul className={isMenu?'menu1':isClose?'ul':'ul'} onClick={()=>setIsMenu(true)}>
             <li><Link to='/'>Quiz</Link></li>

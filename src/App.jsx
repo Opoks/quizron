@@ -58,10 +58,14 @@ let reem=[...addd]
 save(reem)
 setAdd(reem)
 
-
-
-  }
-  
+}
+setQues('')
+setInp1('')
+setInp2('')
+setInp3('')
+setInp4('')
+setAnswer('')
+ 
 }
 function handle1(){
 if(items+1>1){
