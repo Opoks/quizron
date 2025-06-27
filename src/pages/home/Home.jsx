@@ -8,7 +8,7 @@ const Home = ({setDone,done,tab,tub,next,setItems,handle,handle1,setTab,setTub,i
     <div>
        
   <div className='home'> 
-   {done?(<div><h2 className='score'>Your score: {addd.reduce((a,b)=>a+b.score,0)} / {addd.length}</h2><button className='retry' onClick={()=>{if(items+1 >= addd.length){setDone(false);setItems(0); setTab(''); setTub('');  addd.map((sdd)=>{sdd.score=0;sdd.clicked=''});}}}>RETRY</button><div>{addd.map((as,inf)=>(<h2 key={inf}>({inf+1}) {as.question}<br></br><div id='home-selected-options' className={as.clicked===as.ans?'correct':'wrong'}>{as.clicked}</div></h2>))}</div></div>):(<div className='home'><h2>({items +1}) {addd[items].question}</h2>
+   {done?(<div><h2 className='score'>Your score: {addd.reduce((a,b)=>a+b.score,0)} / {addd.length}</h2><button className='retry' onClick={()=>{if(items+1 >= addd.length){setDone(false);setItems(0); setTab(''); setTub('');  addd.map((sdd)=>{sdd.score=0;sdd.clicked=''});}}}>RETRY</button><div>{addd.map((as,inf)=>(<h2 key={inf}>({inf+1}) {as.question}<br></br><div id='home-selected-options' className={as.clicked===as.ans?'correct':'wrong'}>{as.clicked}</div></h2>))}</div></div>):(<div className='hom'><h2>({items +1}) {addd[items].question}</h2>
      <div className="ans">
      {
       addd[items].options.map((option,index)=>(

@@ -37,7 +37,7 @@ const AddQuestions = ({setId,idd,addd,setAdd,save,ques,inp1,inp2,inp3,inp4,answe
       <input type="text" placeholder='Enter Answer' value={answer} onChange={(e)=>setAnswer(()=>e.target.value)} />
       <input type="text" value={idd} readOnly/>
    <button onClick={()=>add()}>ADD</button>
-   <button onClick={()=>{if(confirm('This will delete your added and undo editted and reset questions default.')){localStorage.removeItem('quiz'); window.location.reload() }else{alert('aaaaa')}}}>DEFAULT</button>
+   <button onClick={()=>{if(confirm('This will delete your added and undo editted and reset questions default.')){localStorage.removeItem('quiz'); window.location.reload(true) }}}>DEFAULT</button>
     </div>
 
      <div className='all-questions'>
